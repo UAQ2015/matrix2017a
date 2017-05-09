@@ -3,6 +3,11 @@
 
 class Matrix
 {
+public:
+	void Read();
+	void Print();
+private:
+
 };
 
 #endif
