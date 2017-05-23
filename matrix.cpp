@@ -3,6 +3,9 @@
 
 using namespace std;
 
+Matrix::Matrix()
+{
+}
 Matrix::Matrix(int _m, int _n)
 {	m= _m;
 	n= _n;
@@ -10,11 +13,11 @@ Matrix::Matrix(int _m, int _n)
 }
 
 Matrix Matrix::Add(Matrix b)
-{ 	Matrix c;
-  	
-	for(int i=0; i< ; i++)
-		for(int j=0;j< ; j++)
-		{ mat[i][j]= b.mat[i][j] + m.mat[i][j];
+{ 	
+  	Matrix c(b.m,b.n);
+	for(int i=0; i< b.m ; i++)
+		for(int j=0;j< b.n ; j++)
+		{ c.mat[i][j]= b.mat[i][j] + mat[i][j];
 		}	
 	
 	return c;	
@@ -30,6 +33,18 @@ void Matrix::Ones(int r, int c)
 	   {	mat[i][j]=1;
 
 	   }
+}
+void Matrix::Id(int r, int c)
+{	m=r;
+	n=c;
+	CreateArray();
+	for(int i=0; i<r;i++)
+		for(int j=0;j< c;j++)
+		{ if(i==j)
+			mat[i][j]=1;
+		  else
+			mat[i][j]=0;
+		}
 }
  
 void Matrix::Read()
