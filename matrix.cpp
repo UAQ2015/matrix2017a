@@ -3,6 +3,31 @@
 
 using namespace std;
 
+Matrix::Matrix(int _m, int _n)
+{	m= _m;
+	n= _n;
+	CreateArray();	
+}
+
+//Matrix Matrix::Add(Matrix b)
+//{	
+	
+
+//	return c;	
+//}
+
+void Matrix::Ones(int r, int c)
+{	m=r;
+	n=c;
+	CreateArray();
+
+   for(int i=0; i<r; i++)
+	  for(int j=0;j< c; j++)
+	   {	mat[i][j]=1;
+
+	   }
+}
+ 
 void Matrix::Read()
 {	cout<<"Por favor introduzca el numero de renglones\n";  
 	cin>> m;
