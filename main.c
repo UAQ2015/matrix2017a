@@ -8,7 +8,8 @@ main ()
 	Matrix b;
 	Matrix c;
 	 //Read matrix
-	m.Read();
+//	m.Read();
+	m.Ones(3,3);
 	b.Ones(3, 3);
 	
 	//Print matrix 

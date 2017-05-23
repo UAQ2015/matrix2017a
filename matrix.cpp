@@ -9,12 +9,16 @@ Matrix::Matrix(int _m, int _n)
 	CreateArray();	
 }
 
-//Matrix Matrix::Add(Matrix b)
-//{	
+Matrix Matrix::Add(Matrix b)
+{ 	Matrix c;
+  	
+	for(int i=0; i< ; i++)
+		for(int j=0;j< ; j++)
+		{ mat[i][j]= b.mat[i][j] + m.mat[i][j];
+		}	
 	
-
-//	return c;	
-//}
+	return c;	
+}
 
 void Matrix::Ones(int r, int c)
 {	m=r;

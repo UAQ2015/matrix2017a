@@ -8,7 +8,7 @@ public:
 	Matrix(int,int);
 	void Read();
 	void Print();
-//	Matrix Add(Matrix b);
+	Matrix Add(Matrix b);
 	void Ones(int r, int c);
 private:
 	int m; // Row number
