@@ -11,15 +11,32 @@ Matrix::Matrix(int _m, int _n)
 	n= _n;
 	CreateArray();	
 }
+Matrix Matrix::Prod(Matrix b)
+{	Matrix c(m,b.n);
+		
+	if(n != b.m)
+	{	cout<<"La matriz no puede multiplicarse por la matriz:\n";
+		return b;
+	}
+	
+	for(int i=0; i< b.m ; i++)
+	{	for(int j=0;j< b.n ; j++)
+		{	c.mat[i][j]=0;
+			for(int k=0;k< b.m ;k++)
+			{
+			 c.mat[i][j]+= mat[i][k]* b.mat[k][j];
+			}
+		}
+	}	
+	return c;
+}
 
 Matrix Matrix::Add(Matrix b)
-{ 	
-  	Matrix c(b.m,b.n);
+{ 	Matrix c(b.m,b.n);
 	for(int i=0; i< b.m ; i++)
 		for(int j=0;j< b.n ; j++)
 		{ c.mat[i][j]= b.mat[i][j] + mat[i][j];
-		}	
-	
+		}		
 	return c;	
 }
 
@@ -34,12 +51,12 @@ void Matrix::Ones(int r, int c)
 
 	   }
 }
-void Matrix::Id(int r, int c)
+void Matrix::Id(int r)
 {	m=r;
-	n=c;
+	n=r;
 	CreateArray();
 	for(int i=0; i<r;i++)
-		for(int j=0;j< c;j++)
+		for(int j=0;j< r;j++)
 		{ if(i==j)
 			mat[i][j]=1;
 		  else

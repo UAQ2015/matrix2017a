@@ -7,12 +7,13 @@ main ()
 	Matrix m;   //this creates a new instance
 	Matrix b;
 	Matrix c;
+	Matrix p;
 	Matrix I;
 	 //Read matrix
 //	m.Read();
 	m.Ones(3,3);
 	b.Ones(3,3);
-	I.Id(3,3);
+	I.Id(2);
 	//Print matrix 
 	m.Print();
 	b.Print();
@@ -20,5 +21,7 @@ main ()
 	//operaciones
 	c=m.Add(b);
 	c.Print();
+	p=m.Prod(I);
+	p.Print();
     return 0;
 }

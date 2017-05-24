@@ -10,8 +10,9 @@ public:
 	void Read();
 	void Print();
 	Matrix Add(Matrix b);
+	Matrix Prod(Matrix b);
 	void Ones(int r, int c);
-	void Id(int r, int c);
+	void Id(int r);
 private:
 	int m; // Row number
 	int n; // Col number
