@@ -11,6 +11,7 @@ Matrix::Matrix(int _m, int _n)
 	n= _n;
 	CreateArray();	
 }
+//////////////
 Matrix Matrix::Prod(Matrix b)
 {	Matrix c(m,b.n);
 		
@@ -33,6 +34,10 @@ Matrix Matrix::Prod(Matrix b)
 
 Matrix Matrix::Add(Matrix b)
 { 	Matrix c(b.m,b.n);
+	if( m != b.m || n != b.n)
+	{	cout<<"No puede sumarse la matriz:\n";
+		return b;
+	}	
 	for(int i=0; i< b.m ; i++)
 		for(int j=0;j< b.n ; j++)
 		{ c.mat[i][j]= b.mat[i][j] + mat[i][j];
