@@ -9,6 +9,9 @@ Created by:
 Adriana Gallardo
 Humberto Zurita
 Abraham Jaimes
+Giovanni Alberto Estrada Hernandez
+Arely Loza Alvarez
+Jose Erik Rivas
 
 Started:
 -------------------------------
