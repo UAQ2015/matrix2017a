@@ -16,6 +16,27 @@ Started:
 
 TODO:
 -------------------------------
+* Substraction
+* Division
+* Inverse
+* Determinant
+* Multiply by constant
+* Transposed
+* Solve ax+b=0, where a and b are given
+* Eigenvalues
 
-* Read Matrix
-* Print Matrix
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
