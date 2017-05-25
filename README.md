@@ -8,6 +8,8 @@ Created by:
 -------------------------------
 Adriana Gallardo
 Humberto Zurita
+Jose Erik Rivas
+
 
 Started:
 -------------------------------
