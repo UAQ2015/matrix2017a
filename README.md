@@ -8,6 +8,8 @@ Created by:
 -------------------------------
 Adriana Gallardo
 Humberto Zurita
+Giovanni Alberto Estrada Hernandez
+Arely Loza Alvarez
 
 Started:
 -------------------------------
