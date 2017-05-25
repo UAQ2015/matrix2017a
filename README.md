@@ -10,6 +10,7 @@ Adriana Gallardo
 Humberto Zurita
 Giovanni Alberto Estrada Hernandez
 Arely Loza Alvarez
+Jose Erik Rivas
 
 Started:
 -------------------------------
