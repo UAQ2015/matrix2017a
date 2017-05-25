@@ -106,3 +106,16 @@ void Matrix::DeleteArray ()
 	delete mat;
 	mat = NULL;
 }
+
+/**
+ * Matrix substraction
+**/
+Matrix Matrix::Substraction(Matrix b)
+{
+	Matrix c;
+
+	return c;
+
+}
+
+
