@@ -13,7 +13,7 @@ main ()
 //	m.Read();
 	m.Ones(3,3);
 	b.Ones(2,3);
-	I.Id(2);
+	I.Id(3);
 	//Print matrix 
 	m.Print();
 	b.Print();
