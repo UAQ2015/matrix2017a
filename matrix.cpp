@@ -106,3 +106,14 @@ void Matrix::DeleteArray ()
 	delete mat;
 	mat = NULL;
 }
+
+/**
+ * Matrix substraction
+**/
+
+Matrix Matrix::Determinant(Matrix b)
+{
+	Matrix c;
+
+	return c;
+}
