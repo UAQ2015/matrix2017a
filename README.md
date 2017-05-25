@@ -9,6 +9,11 @@ Created by:
 Adriana Gallardo
 Humberto Zurita
 Briann Coronado
+Abraham Jaimes
+Giovanni Alberto Estrada Hernandez
+Arely Loza Alvarez
+Jose Erik Rivas
+
 Started:
 -------------------------------
 2017/05/02 <3
