@@ -110,12 +110,21 @@ void Matrix::DeleteArray ()
 /**
  * Matrix substraction
 **/
+<<<<<<< HEAD
 Matrix Matrix::Substraction(Matrix b)
+=======
+
+Matrix Matrix::Determinant(Matrix b)
+>>>>>>> 67f11dbb297817921c4f09e9b5799ae51c5ce7b6
 {
 	Matrix c;
 
 	return c;
+<<<<<<< HEAD
 
 }
 
 
+=======
+}
+>>>>>>> 67f11dbb297817921c4f09e9b5799ae51c5ce7b6

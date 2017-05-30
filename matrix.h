@@ -11,6 +11,7 @@ public:
 	void Print();
 	Matrix Add(Matrix b);
 	Matrix Substraction(Matrix b);
+	Matrix Det(Matrix b);
 	Matrix Prod(Matrix b);
 	void Ones(int r, int c);
 	void Id(int r);
