@@ -106,6 +106,7 @@ void Matrix::DeleteArray ()
 	delete mat;
 	mat = NULL;
 }
+<<<<<<< HEAD
 //////////////////Determinante
 float Matrix::Determinant(Matrix b)
 {
@@ -176,4 +177,17 @@ Matrix Matrix::ChRow(int r1, int r2)
 
 
 
+
+=======
+
+/**
+ * Matrix substraction
+**/
+
+Matrix Matrix::Determinant(Matrix b)
+{
+	Matrix c;
+
+	return c;
+}
 
