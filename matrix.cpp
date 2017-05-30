@@ -121,6 +121,20 @@ Matrix Matrix::Copy()
 	return c;	
 }
 
+Matrix& Matrix::operator=(const Matrix &other) // other RValue
+{
+	m= other.m;
+	n= other.n;
+	CreateArray();	
+	
+	for(int i=0; i< m ; i++){
+		for(int j=0;j< n ; j++)
+		{ 
+			mat[i][j]= other.mat[i][j];
+		}
+	}
+	return *this;
+}
 
 
 

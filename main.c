@@ -25,7 +25,8 @@ main ()
 	p=m.Prod(I);
 	p.Print();
 
-	cp= p.Copy();
+	// cp= p.Copy();
+	cp=p; // Copia la matriz p, asigna la copia a cp, regresa cp
 	cp.Print();
     return 0;
 
