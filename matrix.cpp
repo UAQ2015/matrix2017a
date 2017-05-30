@@ -95,7 +95,9 @@ void Matrix::Read()
 		}
 }
 void Matrix::Print()
-{	cout<<"Imprimiendo matriz de "<< m <<" renglones y "<<n<<" columnas\n";	
+{	
+	cout<<"Imprimiendo matriz de "<< m <<" renglones y "<<n<<" columnas\n";	
+	cout<<"La direccion del apuntador es: "<< mat<<"\n";
 	for(int i=0;i<m;i++)
 	{   for(int j=0;j<n;j++)
 		{	cout<<mat[i][j]<<" ";
@@ -119,3 +121,38 @@ void Matrix::DeleteArray ()
 	delete mat;
 	mat = NULL;
 }
+
+Matrix Matrix::Copy()
+{ 	
+	Matrix c(m,n);
+	for(int i=0; i< m ; i++){
+		for(int j=0;j< n ; j++)
+		{ 
+			c.mat[i][j]= mat[i][j];
+		}
+	}
+	return c;	
+}
+
+Matrix& Matrix::operator=(const Matrix &other) // other RValue
+{
+	m= other.m;
+	n= other.n;
+	CreateArray();	
+	
+	for(int i=0; i< m ; i++){
+		for(int j=0;j< n ; j++)
+		{ 
+			mat[i][j]= other.mat[i][j];
+		}
+	}
+	return *this;
+}
+
+Matrix Matrix::operator+(const Matrix &other)
+{
+	cout<< "Calling + operator\n";
+	return Add(other);
+}
+
+
