@@ -22,7 +22,8 @@ main ()
 	//operaciones
 	c=m.Add(b);
 	c.Print();
-    a=m.MultilybyC(b);
+    a=m.MultilybyC();
+    a.Print();
 	p=m.Prod(I);
 	p.Print();
     return 0;
