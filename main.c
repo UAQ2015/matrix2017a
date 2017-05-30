@@ -8,6 +8,7 @@ main ()
 	Matrix b;
 	Matrix c;
 	Matrix p;
+	Matrix cp;
 	Matrix I;
 	 //Read matrix
 //	m.Read();
@@ -23,5 +24,9 @@ main ()
 	c.Print();
 	p=m.Prod(I);
 	p.Print();
+
+	cp= p.Copy();
+	cp.Print();
     return 0;
+
 }
