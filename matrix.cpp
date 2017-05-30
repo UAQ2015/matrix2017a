@@ -106,3 +106,74 @@ void Matrix::DeleteArray ()
 	delete mat;
 	mat = NULL;
 }
+//////////////////Determinante
+float Matrix::Determinant(Matrix b)
+{
+    float d=1;
+    int k=0,aux=0,aux2=0;
+    for(int j=0; j<m;j++)
+    {
+            k=j;
+            aux2=aux=0;
+            while(k<m-1)
+            {
+            if(mat[k][j]!=0)
+               break;
+             k++;
+            }
+            if (k>m-1)return 0;
+
+            if(k!=j)
+            {
+                b=b.ChRow(k,j);
+
+                for(int i1=0; i1< m ; i1++)
+                {   for(int j1=0;j1< n ; j1++)
+                    {
+                        mat[i1][j1]=b.mat[i1][j1];
+                    }
+                }
+                d*=-1;
+            }
+
+            d*=mat[j][j];
+            if(mat[j][j]==0)return 0;
+            aux2=mat[j][j];
+            for(int l=0;l<m;l++)
+            {
+                mat[j][l]/=aux2;
+            }
+
+            for(k=j;k<m-1;k++)
+            {
+                aux=mat[k+1][j];
+                for(int l=0;l<m;l++)
+                {
+                    mat[k+1][l]=(mat[k+1][l]-aux*mat[j][l]);
+                }
+            }
+    }
+    return d;
+}
+
+Matrix Matrix::ChRow(int r1, int r2)
+{   Matrix c(m,n);
+
+    for(int i=0; i< m ; i++)
+    {   for(int j=0;j< n ; j++)
+        {
+            if(i==r1)
+            c.mat[i][j]=mat[r2][j];
+            if(i==r2)
+            c.mat[i][j]=mat[r1][j];
+            if(i!=r1 && i!=r2)
+            c.mat[i][j]=mat[i][j];
+        }
+    }
+    return c;
+}
+
+
+
+
+
