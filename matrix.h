@@ -15,6 +15,7 @@ public:
 	void Id(int r);
 	Matrix Copy(); // Returns a copy of the current matrix
 	Matrix& operator=(const Matrix &other);
+	Matrix operator+(const Matrix &other);
 private:
 	int m; // Row number
 	int n; // Col number

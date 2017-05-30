@@ -136,5 +136,10 @@ Matrix& Matrix::operator=(const Matrix &other) // other RValue
 	return *this;
 }
 
+Matrix Matrix::operator+(const Matrix &other)
+{
+	cout<< "Calling + operator\n";
+	return Add(other);
+}
 
 
