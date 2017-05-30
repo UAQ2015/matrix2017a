@@ -106,3 +106,18 @@ void Matrix::DeleteArray ()
 	delete mat;
 	mat = NULL;
 }
+
+Matrix Matrix::Trans(Matrix b)
+{   Matrix c(b.n,b.m);
+	
+	for(int i=0; i<b.m;i++)
+	{
+        for(int j=0;j<b.n;j++)
+        { 
+          c.mat[j][i]=b.mat[i][j];
+        }
+	}
+	    
+    return c;
+}
+
