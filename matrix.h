@@ -13,6 +13,7 @@ public:
 	Matrix Prod(Matrix b);
 	void Ones(int r, int c);
 	void Id(int r);
+	Matrix Inverse(Matrix b);
 private:
 	int m; // Row number
 	int n; // Col number
