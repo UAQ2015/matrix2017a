@@ -9,6 +9,7 @@ public:
 	Matrix(int _m, int _n);
 	void Read();
 	void Print();
+    Matrix MultiplybyCMatrix b);
 	Matrix Add(Matrix b);
 	Matrix Prod(Matrix b);
 	void Ones(int r, int c);

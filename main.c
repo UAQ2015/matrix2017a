@@ -9,6 +9,7 @@ main ()
 	Matrix c;
 	Matrix p;
 	Matrix I;
+    Matrix a;
 	 //Read matrix
 //	m.Read();
 	m.Ones(3,3);
@@ -21,6 +22,7 @@ main ()
 	//operaciones
 	c=m.Add(b);
 	c.Print();
+    a=m.MultilybyC(b);
 	p=m.Prod(I);
 	p.Print();
     return 0;
