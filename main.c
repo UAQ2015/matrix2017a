@@ -9,10 +9,11 @@ main ()
 	Matrix c;
 	Matrix p;
 	Matrix I;
+	Matrix q;
 	 //Read matrix
 //	m.Read();
 	m.Ones(3,3);
-	b.Ones(2,3);
+	b.Ones(4,3);
 	I.Id(3);
 	//Print matrix 
 	m.Print();
@@ -23,5 +24,7 @@ main ()
 	c.Print();
 	p=m.Prod(I);
 	p.Print();
+	q=m.Trans(b);
+	q.Print();
     return 0;
 }
