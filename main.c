@@ -4,6 +4,9 @@
 main ()
 {  	// Create new matrix
 
+
+	//	int x=0;
+	float det=0;
 	Matrix m;   //this creates a new instance
 	Matrix b;
 	Matrix c;
@@ -12,6 +15,7 @@ main ()
 	Matrix I;
 	Matrix q;
     Matrix a;
+	Matrix nueva;
 	 //Read matrix
 //	m.Read();
 /*
@@ -44,6 +48,12 @@ main ()
     a=m.MultiplybyC(5);
     a.Print();
 	
+
+    nueva.Read();
+    nueva.Print();
+    det=nueva.Determinant(nueva);
+    printf("su determinante es  %f",det);
+
 
 
     return 0;

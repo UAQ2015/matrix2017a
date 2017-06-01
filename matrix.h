@@ -11,6 +11,7 @@ public:
 	void Print();
     Matrix MultiplybyC(float a);
 	Matrix Add(Matrix b);
+	Matrix Det(Matrix b);
 	Matrix Prod(Matrix b);
 	Matrix Trans(Matrix b);
 	void Ones(int r, int c);
@@ -18,6 +19,11 @@ public:
 	Matrix Copy(); // Returns a copy of the current matrix
 	Matrix& operator=(const Matrix &other);
 	Matrix operator+(const Matrix &other);
+/////nvo yo
+    Matrix ChRow(int r1, int r2);
+    float Determinant(Matrix b);
+/////
+
 private:
 	int m; // Row number
 	int n; // Col number
