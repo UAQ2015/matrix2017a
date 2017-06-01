@@ -11,6 +11,7 @@ main ()
 	Matrix cp;
 	Matrix I;
 	Matrix q;
+    Matrix a;
 	 //Read matrix
 //	m.Read();
 /*
@@ -24,6 +25,8 @@ main ()
 	//operaciones
 	c=m.Add(b);
 	c.Print();
+    a=m.MultilybyC();
+    a.Print();
 	p=m.Prod(I);
 	p.Print();
 	q=m.Trans(b);
@@ -35,9 +38,11 @@ main ()
 */
 
 	m.Ones(3,3);
-	b.Ones(3,3);
-	c= m+b;
-	c.Print();
+//	b.Ones(3,3);
+//	c= m+b;
+//	c.Print();
+    a=m.MultiplybyC(5);
+    a.Print();
 	
 
 

@@ -66,6 +66,18 @@ void Matrix::Id(int r)
 		}
 }
  
+Matrix Matrix::MultiplybyC(float a)
+{
+ float p;
+ p=a;
+ Matrix c(m,n);
+ for(int i=0;i<m;i++)
+  for(int j=0;j<n;j++)
+    {
+      c.mat[i][j]=mat[i][j]*a;
+    } 
+  return c;
+}
 void Matrix::Read()
 {	cout<<"Por favor introduzca el numero de renglones\n";  
 	cin>> m;

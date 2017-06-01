@@ -9,6 +9,7 @@ public:
 	Matrix(int _m, int _n);
 	void Read();
 	void Print();
+    Matrix MultiplybyC(float a);
 	Matrix Add(Matrix b);
 	Matrix Prod(Matrix b);
 	Matrix Trans(Matrix b);
