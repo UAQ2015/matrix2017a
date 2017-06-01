@@ -1,2 +1,8 @@
 main
 matrix.o
+*.swp
+*.swo
+*.orig
+
+
+
