@@ -11,9 +11,14 @@ public:
 	void Print();
 	Matrix Add(Matrix b);
 	Matrix Prod(Matrix b);
+	Matrix Trans(Matrix b);
 	void Ones(int r, int c);
 	void Id(int r);
-	Matrix Inverse(Matrix b);
+	Matrix ChRow(int r1,int r2);
+	Matrix Inverse();
+	Matrix Copy(); // Returns a copy of the current matrix
+	Matrix& operator=(const Matrix &other);
+	Matrix operator+(const Matrix &other);
 private:
 	int m; // Row number
 	int n; // Col number
