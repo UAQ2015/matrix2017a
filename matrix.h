@@ -22,8 +22,7 @@ public:
 /////nvo yo
     Matrix ChRow(int r1, int r2);
     float Determinant(Matrix b);
-/////
-
+	Matrix Inverse();
 private:
 	int m; // Row number
 	int n; // Col number

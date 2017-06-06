@@ -18,6 +18,9 @@ main ()
 	Matrix nueva;
 	 //Read matrix
 //	m.Read();
+	 //Read matrix
+	m.Read();
+	m.Print();
 /*
 	m.Ones(3,3);
 	b.Ones(4,3);
@@ -54,8 +57,13 @@ main ()
     det=nueva.Determinant(nueva);
     printf("su determinante es  %f",det);
 
-
-
+	m.Ones(3,3);
+	b.Ones(3,3);
+	c= m+b;
+	c.Print();
+	
+	c=m.Inverse();
+	c.Print();
     return 0;
 
 }
