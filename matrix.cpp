@@ -6,17 +6,30 @@ using namespace std;
 Matrix Matrix::Inverse()
 {   float p;
     float c;
-    int k=0;
+    int z=0;
     int h;
     Matrix I;
     I.Id(n);
 	Matrix b(m,n);
+	b=*this;
 
     //pivot lower triangle
     for(int k=0;k<n-1;k++)
     {	
 		c=mat[k][k];
-		
+		//find number diferent to cero on diagonal
+		if(c == 0)
+		{	
+			while(z<n)
+			{	if(b.mat[z][k] != 0)
+					break;
+				z++;
+			}
+			b=b.ChRow(k,z);
+			I=I.ChRow(k,z);
+			*this=b;
+			c=mat[k][k];			
+		}
         for(int j=0;j<n;j++)
         {   mat[k][j]=mat[k][j]/c;
            	I.mat[k][j]=I.mat[k][j]/c;
@@ -36,7 +49,6 @@ Matrix Matrix::Inverse()
     {   mat[n-1][j]=mat[n-1][j]/c;
         I.mat[n-1][j]=I.mat[n-1][j]/c;
     }
-    I.Print();
     //pivot higher trianglie
     for(int i=0;i<n-1;i++)
     {
@@ -49,9 +61,25 @@ Matrix Matrix::Inverse()
                 I.mat[i][j]=I.mat[i][j]-(p*I.mat[k+1][j]);
             }
         }
-//  I.Print();      
     }
     return I;
+}
+
+Matrix Matrix::ChRow(int r1, int r2)
+{   Matrix c(m,n);
+
+    for(int i=0; i< m ; i++)
+    {   for(int j=0;j< n ; j++)
+        {
+            if(i==r1)
+            c.mat[i][j]=mat[r2][j];
+            if(i==r2)
+            c.mat[i][j]=mat[r1][j];
+            if(i!=r1 && i!=r2)
+            c.mat[i][j]=mat[i][j];
+        }
+    }
+    return c;
 }
 
 
