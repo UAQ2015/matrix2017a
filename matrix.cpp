@@ -17,7 +17,7 @@ Matrix Matrix::Inverse()
     for(int k=0;k<n-1;k++)
     {	
 		c=mat[k][k];
-		//find number diferent to cero on diagonal
+		//find number different to cero on diagonal
 		if(c == 0)
 		{	
 			while(z<n)
