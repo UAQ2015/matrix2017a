@@ -12,7 +12,12 @@ Matrix Matrix::Inverse()
     I.Id(n);
 	Matrix b(m,n);
 	b=*this;
-
+if(b.Determinant(b) == 0)
+{	cout<<"La matriz no es invertible\n";
+	return *this;
+}
+else
+{
     //pivot lower triangle
     for(int k=0;k<n-1;k++)
     {	
@@ -63,6 +68,8 @@ Matrix Matrix::Inverse()
         }
     }
     return I;
+}
+
 }
 
 Matrix Matrix::ChRow(int r1, int r2)
