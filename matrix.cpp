@@ -71,7 +71,7 @@ else
 }
 
 }
-
+/*
 Matrix Matrix::ChRow(int r1, int r2)
 {   Matrix c(m,n);
 
@@ -87,7 +87,7 @@ Matrix Matrix::ChRow(int r1, int r2)
         }
     }
     return c;
-}
+} */
 
 
 Matrix::Matrix()
