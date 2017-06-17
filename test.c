@@ -39,7 +39,18 @@ int main ()
 	}
 	a.Print();
 
-
+	//Division de matrices
+	Matrix A;
+	Matrix B;
+	Matrix C;
+	cout<<"Division de A/B\n";
+	cout<<"\nIntroduce la matriz numerador:\n";
+	A.Read();
+	cout<<"\nIntroduce la matriz denominador:\n";
+	B.Read();
+	cout<<"/nDivision A/B:\n";
+	C=A.Division(B);	
+	C.Print();
 
     return 0;
 

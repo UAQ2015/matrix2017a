@@ -14,6 +14,7 @@ public:
 	Matrix Det(Matrix b);
 	Matrix Prod(Matrix b);
 	Matrix Trans(Matrix b);
+	Matrix Division(Matrix b);
 	void Ones(int r, int c);
 	void Id(int r);
 	Matrix Copy(); // Returns a copy of the current matrix

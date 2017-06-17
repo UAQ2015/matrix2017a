@@ -322,8 +322,18 @@ Matrix Matrix::ChRow(int r1, int r2)
 }
 
 
+Matrix Matrix::Division(Matrix b){
 
+        Matrix a;
+        Matrix c;
+        Matrix d;
+        a=*this;
+        c=b.Inverse();
+        d=a.Prod(c);
+	
+        return d;
 
+}
 
 
 /**
