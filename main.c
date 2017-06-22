@@ -15,6 +15,7 @@ main ()
 	Matrix I;
 	Matrix q;
     Matrix a;
+	Matrix x;
 	Matrix nueva;
 	 //Read matrix
 //	m.Read();
@@ -64,6 +65,21 @@ main ()
 	
 	c=m.Inverse();
 	c.Print();
+
+	/*
+    a=m.Copy();
+	a.Print(); //Initial Matrix "A"
+
+	m.Read();
+	b=m.Copy(); //Independent terms Matrix "b"
+	b.Print();
+
+
+    x=x.xeqAinvb(a,b); //Solution x from Ax=b
+
+	x.Print(); //Print the solution fo Ax=b
+
+	*/
     return 0;
 
 }
