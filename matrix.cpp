@@ -335,6 +335,35 @@ Matrix Matrix::Division(Matrix b){
 
 }
 
+Matrix Matrix::xeqAinvb(Matrix b, Matrix c) //orig, termindp
+
+{
+
+    Matrix a;
+    Matrix d;
+
+    cout << "La solucion del sistema de ecuaciones" << endl;
+
+    for(int i=0;i<b.m;i++)
+    {
+        cout << "|\t";
+
+        for(int j=0;j<b.n;j++)
+        {
+            cout << b.mat[i][j] << "\t";
+        }
+        cout << "| |x" << i+1 << "| = " << *c.mat[i] << endl;
+    }
+
+    cout << "es:\n" << endl;
+	
+    a=b.Inverse();
+    d=a.Prod(c);
+
+    return d;
+
+}
+
 
 /**
  * Matrix substraction

@@ -15,6 +15,7 @@ public:
 	Matrix Prod(Matrix b);
 	Matrix Trans(Matrix b);
 	Matrix Division(Matrix b);
+	Matrix xeqAinvb(Matrix b,Matrix c);
 	void Ones(int r, int c);
 	void Id(int r);
 	Matrix Copy(); // Returns a copy of the current matrix
