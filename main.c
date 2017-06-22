@@ -45,7 +45,7 @@ main ()
 	cp.Print();
 */
 
-	m.Ones(3,3);
+/*	m.Ones(3,3);
 //	b.Ones(3,3);
 //	c= m+b;
 //	c.Print();
@@ -66,7 +66,7 @@ main ()
 	c=m.Inverse();
 	c.Print();
 
-	/*
+	*/
     a=m.Copy();
 	a.Print(); //Initial Matrix "A"
 
@@ -79,7 +79,6 @@ main ()
 
 	x.Print(); //Print the solution fo Ax=b
 
-	*/
     return 0;
 
 }
