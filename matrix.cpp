@@ -336,7 +336,6 @@ Matrix Matrix::Division(Matrix b){
 }
 
 Matrix Matrix::xeqAinvb(Matrix b, Matrix c) //orig, termindp
-
 {
 
     Matrix a;
